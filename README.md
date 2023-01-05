@@ -4,16 +4,6 @@ Full Stack Web Development
 # HTML Basics
 
 <br/>
-
-## Related Topics
-
-* *[HTML5 Events List](html5-events.md)*
-* *[HTML5 Tags](html5-tags.md)*
-* *[CSS Basics](https://github.com/learning-zone/css-basics)*
-* *[JavaScript Basics](https://github.com/learning-zone/javascript-basics)*
-
-<br/>
-
 ## Table of Contents
 
 * [Introduction](#-1-introduction)
