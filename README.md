@@ -62,3 +62,69 @@ The web page is rendered in quirks mode. The web browsers engines use quirks mod
 ## Q. What are the new form elements in HTML5?
 
 There are five new form elements in the HTML5 forms specification: `<datalist>`, `<output>`, `<progress>`, and `<meter>`. 
+
+
+## Q. What are the semantic tags available in html5?
+
+HTML5 semantic tags define the function and the category of your text, simplifying the work for browsers and search engines, as well as developers.
+
+HTML5 offers new semantic elements to define different parts of a web page:
+
+* `<article>`
+* `<aside>`
+* `<details>`
+* `<figcaption>`
+* `<figure>`
+* `<footer>`
+* `<header>`
+* `<main>`
+* `<mark>`
+* `<nav>`
+* `<section>`
+* `<summary>`
+* `<time>`
+
+**Syntax:**
+
+```html
+<!DOCTYPE html> 
+
+<html>  
+   <head> 
+      <meta charset = "utf-8"/> 
+      <title>...</title> 
+   </head> 
+  
+   <body> 
+      <header>...</header> 
+      <nav>...</nav> 
+      
+      <article> 
+         <section> 
+            ... 
+         </section> 
+      </article> 
+      <aside>...</aside> 
+      
+      <footer>...</footer> 
+   </body> 
+</html> 
+```
+
+<div align="right">
+    <b><a href="#table-of-contents">↥ back to top</a></b>
+</div>
+
+## Q. Why you would like to use semantic tag?
+
+* Search Engine Optimization, accessibility, repurposing, light code. 
+* Many visually impaired person rely on browser speech and semantic tag helps to interpret page content clearly.
+* Search engine needs to understand page content to rank and semantic tag helps.
+* Semantic code aids accessibility. Specially, many people whose eyes are not good rely on speech browsers to read pages to them. These programs cannot interpret pages very well unless they are clearly explained.
+* Help Search engines to better understand pages. Search engine need to understand what your content is about when rank you properly on search engines. Semantic code tends to improve your placement on search engines, as it is easier for the "search engine spiders" to understand.
+* It\'s easier to read and edit, which saves time and money during maintenance.
+
+<div align="right">
+    <b><a href="#table-of-contents">↥ back to top</a></b>
+</div>
+
