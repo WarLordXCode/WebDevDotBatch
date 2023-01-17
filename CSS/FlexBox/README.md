@@ -34,43 +34,7 @@
 1. [Flexbox Cheatsheet](#flexbox-cheatsheet)
 1. [Aligning with Auto Margins](#bonus-aligning-with-auto-margins)
 
-## Introduction
-
-### What is CSS?
-
-- CSS stands for Cascading Style Sheets.
-- CSS describes how HTML elements are to be displayed on - screen, paper, or in other media.
-- CSS saves a lot of work. It can control the layout of - multiple web pages all at once.
-- External stylesheets are stored in CSS files.
-
----
-
-### Why Use CSS?
-
-CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
-
----
-
-### CSS Syntax
-
-```html
-<p>Hii how are you</p>
-```
-
-```css
-p {
-    color: red;
-    text-align: center;
-}
-```
-
-### Example Explained
-
-- `P` is a selector in CSS (it points to the HTML element you want to style: `<p>`).
-- color is a property, and red is the property value
-- text-align is a property, and center is the property value
-
----
+## #flexbox-intro
 
 ### CSS Flex Box
 
@@ -80,8 +44,12 @@ It is mainly used to make CSS3 capable to change its item?s width and height to 
 
 The CSS3 flexbox contains flex containers and flex items.
 
-### Flex container & Flex Items
-##### Flex Conatainer
+---
+
+## #flex-container-and-flex-items
+
+### Flex Conatainer (Parent Element)
+
 This is a flex container (the blue area) with three flex items:
 
 ![1673962524323](image/README/1673962524323.png)
@@ -89,10 +57,11 @@ This is a flex container (the blue area) with three flex items:
 The flex container becomes flexible by setting the `display` property to `flex`:
 
 ###### Example :
+
 ```css
 .flex-container {
   display: flex;
-} 
+}
 ```
 
 The flex container properties are:
@@ -103,9 +72,23 @@ The flex container properties are:
 - `justify-content`
 - `align-items`
 - `align-content`
+
 ---
 
+### Flex Item(Child Elements)
+
+The direct child elements of a flex container automatically becomes flexible (flex) items.
 
 
+![1673965561746](image/README/1673965561746.png)
 
+The element above represents four blue flex items inside a grey flex container.
 
+```html
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+</div> 
+```
