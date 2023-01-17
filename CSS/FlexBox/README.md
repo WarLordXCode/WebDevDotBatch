@@ -79,7 +79,6 @@ The flex container properties are:
 
 The direct child elements of a flex container automatically becomes flexible (flex) items.
 
-
 ![1673965561746](image/README/1673965561746.png)
 
 The element above represents four blue flex items inside a grey flex container.
@@ -90,5 +89,14 @@ The element above represents four blue flex items inside a grey flex container.
   <div>2</div>
   <div>3</div>
   <div>4</div>
-</div> 
+</div>
 ```
+
+The flex item properties are:
+
+- `order`
+- `flex-grow`
+- `flex-shrink`
+- `flex-basis`
+- `flex`
+- `align-self`
