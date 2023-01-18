@@ -116,6 +116,7 @@ One VERY important thing I want to point out is that the flex container only wra
 Of course, you can establish a Flexbox as long as there is a parent-child relationship. So a child can also be the flex container to its children. But it will be a separate flex container. And it doesn't carry over the grandparent flex properties.
 
 This is probably one of the most important concepts that helped me understand how Flexbox works. And knowing this will help solve a lot of those "hey, why isn't this working" moments 😅
+
 ### Syntax
 
 ```css
@@ -147,23 +148,131 @@ div > p {
   background-color: plum;
 }
 ```
+
 ### Output
 
 ![1674046570719](image/README/1674046570719.png)
 
-### Notice*
+### Notice\*
 
 Notice that the CSS property does not apply to the third p element as it is not an immediate child.
 
 ---
 
-## Flexbox Axes 
+## Flexbox Axes
+
 ## #flexbox-axes
 
 Flexbox operates in a 2 axes system: a main and a cross axis. The main axis is your defining direction of how your flex items are placed in the flex container. Determining the cross axis is very simple, it's in the direction that's perpendicular to your main axis.
 
-Remember in math class, we were taught x and y axis. Well, throw that out. Because the main axis can be horizontal or vertical. The x axis is not always the main axis. This was a mistake I made, so hopefully you won’t make the same incorrect assumption as I did 😅
+CSS flexbox axes works on a vertical(cross-axes) and horizontal(main-axes) when coders need to move items around in their project. The code needed to work along the main-axes is “justify-content: {direction of the content}” and the cross axes code is “align-items: { direction of content }”.
 
 ![1674047641658](image/README/1674047641658.png)
+
+### Example 1
+
+In the example below, is flex box axes in action. Let say that you have square blocks of code as your items and your trying to determine how the justify-content on the main-axes. Using the “justify-content: flex-start”, begins on the main axes at the top of the page starting with block “one”.
+
+```html
+  <div class="box">
+    <div>one</div>
+    <div>two</div>
+  </div>
+
+```
+
+```css
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 500px;
+  border: 2px solid rgb(96, 139, 100);
+}
+```
+### Output
+
+![1674049118264](image/README/1674049118264.png)
+### Example 2
+In the example below, is flex box axes in action. Let say that you have square blocks of code as your items and your trying to determine how the justify-content on the main-axes. Using the “justify-content: flex-start”, begins on the main axes at the top of the page starting with block “one”.
+
+```html
+  <div class="box">
+    <div>one</div>
+    <div>two</div>
+  </div>
+
+```
+
+```css
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  border: 2px solid rgb(96, 139, 100);
+}
+```
+### Output
+
+![1674049335892](image/README/1674049335892.png)
+
+The “align-items:{direction of content}” have the same concept as the justify-content property but the difference is the align-items property works on cross-axes. For example, in the display below..if you wrote the “align-items: left”, this would push the items on the screen all the way to the left end to the width box.
+
+
+```html
+  <div class="box">
+    <div>one</div>
+    <div>two</div>
+  </div>
+
+```
+
+```css
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 500px;
+  border: 2px solid rgb(96, 139, 100);
+}
+```
+### Output
+
+![1674049523265](image/README/1674049523265.png)
+
+Here in example #2, if you were to rewrite the code above and change to “align-items: center”, this would push the items to the center of the page.
+
+
+```html
+  <div class="box">
+    <div>one</div>
+    <div>two</div>
+  </div>
+
+```
+
+```css
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  border: 2px solid rgb(96, 139, 100);
+}
+```
+### Output
+
+![1674049635538](image/README/1674049635538.png)
+
+Overall the flexbox axes allows you move items using the “justify-content” (main-axes) or the “align-items” (cross-axes) property. Using these two properties can make the CSS3 experience rich when designing and creating a unique application.
+
+
+
+
 
 
