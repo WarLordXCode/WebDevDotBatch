@@ -100,3 +100,70 @@ The flex item properties are:
 - `flex-basis`
 - `flex`
 - `align-self`
+
+---
+
+## #immediate-child-only
+
+### What is CSS immediate child?
+
+The CSS child combinator `(>)` can be used to select all elements that are the immediate children of a specified element.
+
+A combinator combines and explains the relationship between two or more selectors
+
+One VERY important thing I want to point out is that the flex container only wraps around its immediate children. The flex container doesn't wrap beyond one layer deep. Only the immediate children. So there is NOT a grandchildren or grand-grandchildren relationship. Only Parent ↔️ Immediate Children!
+
+Of course, you can establish a Flexbox as long as there is a parent-child relationship. So a child can also be the flex container to its children. But it will be a separate flex container. And it doesn't carry over the grandparent flex properties.
+
+This is probably one of the most important concepts that helped me understand how Flexbox works. And knowing this will help solve a lot of those "hey, why isn't this working" moments 😅
+### Syntax
+
+```css
+
+selector1 > selector2 { style properties }
+
+```
+
+It matches only those elements matched by the second selector (`selector2`) that are the direct children of elements matched by the first selector (`selector1`).
+
+### Example
+
+In this example, add a background-color property to all the immediate child (`p`) elements of the parent (`div`) element.
+
+```html
+<div>
+  <p>1. Immeditate child.</p>
+  <p>2. Immeditate child.</p>
+  <section><p>3. Not immeditate child.</p></section>
+  <!-- not Child but Descendant -->
+  <p>4. Immeditate child.</p>
+</div>
+```
+
+```css
+/* p elements that are immediate
+   children of div elements */
+div > p {
+  background-color: plum;
+}
+```
+### Output
+
+![1674046570719](image/README/1674046570719.png)
+
+### Notice*
+
+Notice that the CSS property does not apply to the third p element as it is not an immediate child.
+
+---
+
+## Flexbox Axes 
+## #flexbox-axes
+
+Flexbox operates in a 2 axes system: a main and a cross axis. The main axis is your defining direction of how your flex items are placed in the flex container. Determining the cross axis is very simple, it's in the direction that's perpendicular to your main axis.
+
+Remember in math class, we were taught x and y axis. Well, throw that out. Because the main axis can be horizontal or vertical. The x axis is not always the main axis. This was a mistake I made, so hopefully you won’t make the same incorrect assumption as I did 😅
+
+![1674047641658](image/README/1674047641658.png)
+
+
