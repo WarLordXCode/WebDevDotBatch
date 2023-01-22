@@ -3,36 +3,36 @@
 ## Table of Contents
 
 1. [Introduction](#flexbox-intro)
-1. [Flex Container & Flex Items](#flex-container-and-flex-items)
-1. [Immediate Child Only](#immediate-child-only)
-1. [Flexbox Axes](#flexbox-axes)
-1. [Flexbox Module](#flexbox-module)
-1. [Parent Properties](#parent-properties)
-1. [Display](#display)
-1. [block vs inline](#block-vs-inline)
-1. [flex-direction](#flex-direction)
-1. [flex-wrap](#flex-wrap)
-1. [flex-flow](#flex-flow)
-1. [justify-content [row]](#justify-content-row)
-1. [justify-content [column]](#justify-content-column)
-1. [space-around vs space-evenly](#space-around-vs-space-evenly)
-1. [align-items [row]](#align-items-row)
-1. [baseline](#baseline)
-1. [align-items [column]](#align-items-column)
-1. [align-content](#align-content)
-1. [Child Properties](#child-properties)
-1. [order](#order)
-1. [flex-grow](#flex-grow)
-1. [flex-grow calculation](#flex-grow-calculation)
-1. [flex-shrink](#flex-shrink)
-1. [flex-shrink calculation](#flex-shrink-calculation)
-1. [flex-basis](#flex-basis)
-1. [flex-basis vs widths](#flex-basis-vs-widths)
-1. [flex](#flex)
-1. [align-self](#align-self)
-1. [Flexbox Properties](#flexbox-properties)
-1. [Flexbox Cheatsheet](#flexbox-cheatsheet)
-1. [Aligning with Auto Margins](#bonus-aligning-with-auto-margins)
+2. [Flex Container &amp; Flex Items](#flex-container-and-flex-items)
+3. [Immediate Child Only](#immediate-child-only)
+4. [Flexbox Axes](#flexbox-axes)
+5. [Flexbox Module](#flexbox-module)
+6. [Parent Properties](#parent-properties)
+7. [Display](#display)
+8. [block vs inline](#block-vs-inline)
+9. [flex-direction](#flex-direction)
+10. [flex-wrap](#flex-wrap)
+11. [flex-flow](#flex-flow)
+12. [justify-content [row]](#justify-content-row)
+13. [justify-content [column]](#justify-content-column)
+14. [space-around vs space-evenly](#space-around-vs-space-evenly)
+15. [align-items [row]](#align-items-row)
+16. [baseline](#baseline)
+17. [align-items [column]](#align-items-column)
+18. [align-content](#align-content)
+19. [Child Properties](#child-properties)
+20. [order](#order)
+21. [flex-grow](#flex-grow)
+22. [flex-grow calculation](#flex-grow-calculation)
+23. [flex-shrink](#flex-shrink)
+24. [flex-shrink calculation](#flex-shrink-calculation)
+25. [flex-basis](#flex-basis)
+26. [flex-basis vs widths](#flex-basis-vs-widths)
+27. [flex](#flex)
+28. [align-self](#align-self)
+29. [Flexbox Properties](#flexbox-properties)
+30. [Flexbox Cheatsheet](#flexbox-cheatsheet)
+31. [Aligning with Auto Margins](#bonus-aligning-with-auto-margins)
 
 ## #flexbox-intro
 
@@ -174,11 +174,10 @@ CSS flexbox axes works on a vertical(cross-axes) and horizontal(main-axes) when 
 In the example below, is flex box axes in action. Let say that you have square blocks of code as your items and your trying to determine how the justify-content on the main-axes. Using the “justify-content: flex-start”, begins on the main axes at the top of the page starting with block “one”.
 
 ```html
-  <div class="box">
-    <div>one</div>
-    <div>two</div>
-  </div>
-
+<div class="box">
+  <div>one</div>
+  <div>two</div>
+</div>
 ```
 
 ```css
@@ -191,18 +190,20 @@ In the example below, is flex box axes in action. Let say that you have square b
   border: 2px solid rgb(96, 139, 100);
 }
 ```
+
 ### Output
 
 ![1674049118264](image/README/1674049118264.png)
+
 ### Example 2
+
 In the example below, is flex box axes in action. Let say that you have square blocks of code as your items and your trying to determine how the justify-content on the main-axes. Using the “justify-content: flex-start”, begins on the main axes at the top of the page starting with block “one”.
 
 ```html
-  <div class="box">
-    <div>one</div>
-    <div>two</div>
-  </div>
-
+<div class="box">
+  <div>one</div>
+  <div>two</div>
+</div>
 ```
 
 ```css
@@ -215,19 +216,18 @@ In the example below, is flex box axes in action. Let say that you have square b
   border: 2px solid rgb(96, 139, 100);
 }
 ```
+
 ### Output
 
 ![1674049335892](image/README/1674049335892.png)
 
 The “align-items:{direction of content}” have the same concept as the justify-content property but the difference is the align-items property works on cross-axes. For example, in the display below..if you wrote the “align-items: left”, this would push the items on the screen all the way to the left end to the width box.
 
-
 ```html
-  <div class="box">
-    <div>one</div>
-    <div>two</div>
-  </div>
-
+<div class="box">
+  <div>one</div>
+  <div>two</div>
+</div>
 ```
 
 ```css
@@ -240,19 +240,18 @@ The “align-items:{direction of content}” have the same concept as the justif
   border: 2px solid rgb(96, 139, 100);
 }
 ```
+
 ### Output
 
 ![1674049523265](image/README/1674049523265.png)
 
 Here in example #2, if you were to rewrite the code above and change to “align-items: center”, this would push the items to the center of the page.
 
-
 ```html
-  <div class="box">
-    <div>one</div>
-    <div>two</div>
-  </div>
-
+<div class="box">
+  <div>one</div>
+  <div>two</div>
+</div>
 ```
 
 ```css
@@ -265,11 +264,190 @@ Here in example #2, if you were to rewrite the code above and change to “align
   border: 2px solid rgb(96, 139, 100);
 }
 ```
+
 ### Output
 
 ![1674049635538](image/README/1674049635538.png)
 
 Overall the flexbox axes allows you move items using the “justify-content” (main-axes) or the “align-items” (cross-axes) property. Using these two properties can make the CSS3 experience rich when designing and creating a unique application.
+
+## Flexbox Module
+
+### flexbox-module
+
+##### What is it?:
+
+The Flexbox Module refers to the concept that when we apply the property, display:flex; to an element, we're not just flexing the display but also gaining access to a collection of properties we can apply. These properties are awesome and “provide a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).”
+
+#### Why is it important?:
+
+Flexbox is important because it provides a dynamic way to style our pages. No more calculating widths, heights or manually positioning objects.
+
+Flexbox provides the tools to tackle almost any positioning problem. Occasionally, you’ll have to rely on a few custom positioning styles, but for most layout objectives Flexbox has got your back!
+
+## Parent Properties
+
+### #parent-properties
+
+The flex container properties are:
+
+- `flex-direction`
+- `flex-wrap`
+- `flex-flow`
+- `justify-content`
+- `align-items`
+- `align-content`.
+
+## Display
+
+### #display
+
+To start this Flexbox , we need to first create our flex container. This is done by applying flex to the display property on the parent element. Bam! Now all its immediate children will become flex items.
+
+#### There are 2 types of flex container:
+
+flex will create a block level flex container, and inline-flex will create an inline level flex container. More on block and inline in the next post 😉
+
+## block vs inline
+
+### #block-vs-inline
+
+Very simply explained, block element takes up the entire width of the container. They look like building blocks where each block is stacked on each other. Whereas inline element only takes up the space it needs. So they appear to be in a line, or side by side of each other.
+
+### Block
+
+```css
+div {
+  display: block;
+}
+```
+
+#### Output
+
+![1674288083327](image/README/1674288083327.png)
+
+### Inline
+
+```css
+div {
+  display: inline;
+}
+```
+
+#### Output
+
+![1674288302817](image/README/1674288302817.png)
+
+## Flex direction
+
+The `flex-direction` property defines in which direction the container wants to stack the flex items.
+
+This is the property that allows us to define our main axis. Remember I mentioned that our main axis can be horizontal or vertical. So if we want the main axis to be horizontal, that's called row. And if we want it to be vertical, that's called column. Also, remember we had a main start and main end. We simply add a reverse suffix to set our "main start" in the reverse direction.
+
+```css
+.parent {
+  flex-direction: row /* default */
+               or row-reverse
+               or column
+               or column-reverse
+}
+```
+
+![1674288639032](image/README/1674288639032.png)
+
+## Flex-Wrap
+
+The `flex-wrap` property specifies whether the flex items should wrap or not.
+
+By default, flex items will try to shrink itself to fit onto one line, in other words, no wrap. However if you want the flex items to maintain its size and have the overflow spread on multiple lines in the containers, then you can turn on wrap.
+
+This property is what will allow flex items in your container to occupy more than one line.
+
+```css
+.parent {
+
+  flex-wrap: nowrap /* default */
+          or wrap
+          or wrap-reverse
+}
+
+```
+
+![1674290161266](image/README/1674290161266.png)
+
+## flex-flow
+
+The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties.
+
+Example
+
+```css
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+} 
+```
+## justify-content [row]
+
+Defines how flexbox/grid items are aligned according to the main axis, within a flexbox/grid container.
+
+`justify-content: flex-start;`
+
+The flexbox items are pushed towards the start of the container's main axis.
+
+![1674290642467](image/README/1674290642467.png)
+
+`justify-content: flex-end;`
+
+The flexbox items are pushed towards the end of the container's main axis.
+
+![1674290744238](image/README/1674290744238.png)
+
+`justify-content: center;`
+
+The flexbox items are centered along the container's main axis.
+
+![1674290821790](image/README/1674290821790.png)
+
+`justify-content: space-between;`
+
+The remaining space is distributed between the flexbox items.
+
+![1674290922982](image/README/1674290922982.png)
+
+`justify-content: space-around;`
+
+The remaining space is distributed around the flexbox items: this adds space before the first item and after the last one.
+
+![1674291013950](image/README/1674291013950.png)
+
+
+## justify-content [column]
+
+The main axis can also lie vertically. In that case, flex-direction is set to column. Here's how the flex items will be aligned in that instance.
+
+```css
+.parent {
+  flex-direction: column;
+
+  justify-content: flex-start /* default */
+                or flex-end
+                or center
+                or space-around
+                or space-between
+                or space-evenly
+}
+```
+
+![1674291341837](image/README/1674291341837.png)
+
+## space-around vs space-evenly
+
+(#space-around-vs-space-evenly)
+
+You might not notice the subtle difference between space-around and space-evenly. So let's talk about it. In space-evenly, the empty space in between the flex items is always equal. However, in space-around, only the inner items will have equal spacing in between each other. The first and last item will only be allocated half the spacing.
+
+![1674291602897](image/README/1674291602897.png)
 
 
 
